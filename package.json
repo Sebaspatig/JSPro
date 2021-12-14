@@ -1,0 +1,26 @@
+{
+  "name": "jsprofesional",
+  "version": "1.0.0",
+  "description": "Aprendizaje JS Profesional",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebaspatig/JSPro.git"
+  },
+  "author": "Sebastián Patiño Giraldo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sebaspatig/JSPro/issues"
+  },
+  "homepage": "https://github.com/Sebaspatig/JSPro#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}

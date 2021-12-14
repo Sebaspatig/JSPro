@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>SebaspatigMediaPlayer</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./src/assets/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&family=M+PLUS+2:wght@300;400;600&family=Raleway:ital,wght@0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Sebaspatig Media Player</h1>
+      <p clas="header__text">An extensible media player.</p>
+    </header>
+
+    <main class="container">
+      <video class="movie">
+        <source src="./src/assets/ejercicioMP.mp4" />
+      </video>
+
+      <button class="button btn__playPause">
+        <i class="far fa-play-circle btn__play" id="btn_PlayPause"></i>Play/Pause
+      </button>
+    </main>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
