@@ -1,27 +1,10 @@
+import MediaPlayer from "./assets/MediaPlayer.js";
+import AutoPlay from "./assets/plugins/AutoPlay.js";
 const video = document.querySelector("video");
-const btn = document.querySelector("button");
-const btn__playPause = document.getElementById("btn_PlayPause");
+const btn_play = document.querySelector("#playButton");
+const btn_mute = document.querySelector("#muteButton");
 
-// Se crea una "clase" tambien se le dan parametros de configuración
-function MediaPlayer(config) {
-	this.media = config.el;
-}
+const player = new MediaPlayer({ el: video, plugins: [new AutoPlay()] });
 
-// Para trabajar con clases se crean los metodos por medio de prototype y nombre del metodo
-MediaPlayer.prototype.play = function () {
-	// this guarda un valor en la instacia de Mediaplayer o cualquier otro objeto
-	if (this.media.paused) {
-        this.media.play();
-        btn__playPause.classList.remove("fa-play-circle")
-        btn__playPause.classList.add("fa-pause-circle")
-	} else {
-        this.media.pause();
-        btn__playPause.classList.remove("fa-pause-circle")
-        btn__playPause.classList.add("fa-play-circle")
-	}
-};
-const player = new MediaPlayer({ el: video });
-
-btn.onclick = () => {
-    player.play()
-};
+btn_play.onclick = () => player.tooglePlay();
+btn_mute.onclick = () => player.toogleMute();

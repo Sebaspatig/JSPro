@@ -29,14 +29,22 @@ main {
   border-radius: 5px;
 }
 
-.btn__playPause{
+.btn__playPause, .btn__muteUnmute{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.btn__play{
+.btn__play, .btn__mute{
   font-weight: 600;
   font-size: var(--Size-L);
   margin-right: 6px;
+}
+
+.btn__muteUnmute:hover{
+  background-color: var(--txt-lightblue);
+}
+
+.controls{
+  display: flex;
 }
