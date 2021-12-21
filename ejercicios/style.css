@@ -1,0 +1,47 @@
+@import "../src/config.css";
+
+.filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter__item{
+    list-style: none;
+    padding: 15px;
+    /* font-family: var(--Font-Rale);
+    font-size: 32px; */
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie__item{
+    list-style: none;
+    padding: 15px;
+    max-width: 370px;
+}
+
+.movie__item:hover{
+    transform:translateY(-2%);
+    box-shadow: var(--boxShadow);
+    transition: all var(--speed);
+}
+
+.movie__title{
+    font-family: var(--Font-Exo);
+    font-size: var(--Size-M);
+
+}
+.movie__released{
+    font-family: var(--Font-Plus);
+    font-size: var(--Size-S);
+}
+
+
+.button{
+    font-size: var(--Size-S);
+}

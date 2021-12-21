@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&family=M+PLUS+2:wght@300;400;600&family=Raleway:ital,wght@0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
     <title>Ejercicio Promises</title>
 </head>
 <body>
 
-    <ul>
-        <li><button id="parallel">Get Top Movies in Parallel</button></li>    
+    <ul class="filter">
+        <li class="filter__item"><button class="button" id="btn_all">Get Popular Movies</button></li>    
+        <li class="filter__item"><button class="button" id="parallel">Get Top Movies</button></li>    
     </ul>
 
     <ul class="movies" id='movies'></ul>
