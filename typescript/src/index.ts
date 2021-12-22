@@ -1,11 +1,11 @@
-import MediaPlayer from "./assets/MediaPlayer.js";
-import AutoPlay from "./assets/plugins/AutoPlay.js";
-import AutoPause from "./assets/plugins/AutoPause.js";
+import MediaPlayer from "./assets/MediaPlayer";
+import AutoPlay from "./assets/plugins/AutoPlay";
+import AutoPause from "./assets/plugins/AutoPause";
 
 
 const video = document.querySelector("video");
-const btn_play = document.querySelector("#playButton");
-const btn_mute = document.querySelector("#muteButton");
+const btn_play: HTMLElement = document.querySelector("#playButton");
+const btn_mute: HTMLElement = document.querySelector("#muteButton");
 
 const player = new MediaPlayer({ el: video, plugins: [new AutoPlay(), new AutoPause()] });
 
