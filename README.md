@@ -7,5 +7,6 @@ Curso de aprendizaje de javascript profesional de platzi
 - Html
 - CSS
 - Javascript
+- TypeScript
 
 ## Se estara actualizando la página
