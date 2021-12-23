@@ -48,3 +48,52 @@ main {
 .controls{
   display: flex;
 }
+
+.video__content{
+  position: relative;
+}
+
+.ads {
+  padding: 4px;
+  padding-right: 8px;
+  background: var(--bg-white);
+  width: 20%;
+
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  transform: translateX(-5%);
+}
+
+.ads__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ads__img {
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  margin-right: 16px;
+}
+
+.ads__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ads__title {
+  margin: 0;
+}
+.ads__description{
+  font-size: var(--Size-XS);
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

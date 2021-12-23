@@ -2,13 +2,14 @@ const btn__playPause = document.getElementById("btn_PlayPause");
 const btn__muteUnmute = document.getElementById("btn__muteUnmute");
 
 class MediaPlayer {
-	private media: HTMLMediaElement;
-	private plugins: Array<any>;
+	media: HTMLMediaElement;
+	plugins: Array<any>;
+	container: HTMLElement;
 
 	constructor(config) {
 		this.media = config.el;
 		this.plugins = config.plugins || [];
-
+		this.initPlayer();
 		this.initPlugins();
 	}
 	// Para trabajar con clases se crean los metodos por medio de prototype y nombre del metodo
@@ -29,6 +30,14 @@ class MediaPlayer {
 			btn__playPause.classList.remove("fa-pause-circle");
 			btn__playPause.classList.add("fa-play-circle");
 		}
+	}
+
+	initPlayer() {
+		this.container = document.createElement("section");
+		this.container.setAttribute('class', 'video__content');
+
+		this.media.parentNode.insertBefore(this.container, this.media);
+		this.container.appendChild(this.media);
 	}
 
 	private initPlugins() {
